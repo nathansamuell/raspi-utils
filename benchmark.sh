@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # copied from https://www.tomshardware.com/how-to/raspberry-pi-benchmark-vcgencmd
+# REQUIRES stress package installed -- if ran after installessentials.sh this requirement is satisfied
 
 echo "Tom's Hardware Benchmark Tool"
 output_file="benchmark.csv"
-
 
 echo "Timestamp,CPU Temperature (°C),CPU Clock Speed (MHz),CPU Throttled" > "$output_file"
 echo "Idle data for 60 seconds"
