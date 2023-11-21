@@ -1,8 +1,8 @@
 #! /bin/bash
 
-install_from_apt=$(sudo apt install -y tmux vim stress lynx git curl wget)
+install_from_apt=$(sudo apt-get install -y tmux vim stress lynx git curl wget)
 download_speedtest_cli=$(curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash)
-install_speedtest_cli=$(sudo apt install -y speedtest)
+install_speedtest_cli=$(sudo apt-get install -y speedtest)
 get_docker=$(curl -sSL https://get.docker.com | sh)
 install_docker=$(sudo usermod -aG docker $USER)
 pihole=$(wget https://github.com/pi-hole/docker-pi-hole/blob/master/examples/docker_run.sh)
