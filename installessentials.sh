@@ -5,6 +5,7 @@ download_speedtest_cli=$(curl -s https://packagecloud.io/install/repositories/oo
 install_speedtest_cli=$(sudo apt-get install -y speedtest)
 get_docker=$(curl -sSL https://get.docker.com | sh)
 install_docker=$(sudo usermod -aG docker $USER)
+test_docker=$(docker run hello_world)
 pihole=$(wget https://github.com/pi-hole/docker-pi-hole/blob/master/examples/docker_run.sh)
 
 echo "installing from apt: tmux, vim, stress, lunx, git, curl, wget"
@@ -14,9 +15,9 @@ echo "$download_speedtest_cli"
 echo "$install_speedtest_cli"
 echo "installing docker"
 echo "$get_docker"
-echo "install_docker"
+echo "$install_docker"
 echo "testing docker install:"
-echo "$docker run hello_world"
+echo "$test_docker"
 echo "downloading pihole"
 echo "$pihole"
 
