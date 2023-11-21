@@ -1,3 +1,5 @@
+#! /bin/bash
+
 get_docker=$(curl -sSL https://get.docker.com | sh)
 install_docker=$(sudo usermod -aG docker $USER)
 refresh_user=$(su - $USER)
